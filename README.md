@@ -33,7 +33,7 @@ To make the links work I had to write the headings in lower case. The correct fu
 * [handleConnection](#handleconnection)
 
 ## users
-This file is almost identical to [user_management.go](https://github.com/BadNameException/Counzl_Client/blob/justanotherbranch/app/modules/users/user_management.go) except for a few variations: 
+This file is almost identical to [user_management.go](https://github.com/OpenSourceProject-IS213/Counzl_Client/blob/master/app/modules/users/user_management.go) except for a few variations: 
 * A user is stored in the database with the user ID as the key (instead of username like in Counzl_Client), this makes it possible to store multiple users with the same username. 
 * An additional db-file that contains just one element; the highest ID that exists in the user-db-file. This makes storing a user much quicker, because we do not have to iterate the user-db to find the next user ID. 
 * A user is stored with a timestamp which indicates the time a user was stored. 
